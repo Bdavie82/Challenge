@@ -1,7 +1,9 @@
 import unittest
 
-from Fi
+from num2words import num2words as N2W
 from selenium import webdriver
+
+from OpsandFunChallenge.Fib import Fib
 
 
 class Loops(unittest.TestCase):
@@ -25,7 +27,10 @@ class Loops(unittest.TestCase):
         self.assertIn("Copart USA", self.driver.title)
 
     def test_displayFib(self):
-        Fib.fibcalc(5)
+        num = Fib().fibcalc(9)
+        word = N2W(num)
+
+        print(str(num) + ' - ' + word)
 
 
 if __name__ == '__main__':
