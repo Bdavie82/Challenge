@@ -1,6 +1,6 @@
 import unittest
 
-from Fib
+from Fi
 from selenium import webdriver
 
 
