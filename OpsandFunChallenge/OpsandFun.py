@@ -18,16 +18,17 @@ class Loops(unittest.TestCase):
         # code to close webdriver
         self.driver.close()
 
-    def navigateToPage(self):
+    def navigate_to_page(self):
         self.driver.get("https://www.copart.com")
 
-    def test_AssertCorrectPage(self):
-        self.navigateToPage()
+    def test_assert_correct_page(self):
+        self.navigate_to_page()
         # code for assert test
         self.assertIn("Copart USA", self.driver.title)
 
-    def test_displayFib(self):
-        num = Fib().fibcalc(9)
+    def test_display_fib(self):
+        des_seq = 4
+        num = Fib().fibcalc(des_seq - 1)
         word = N2W(num)
 
         print(str(num) + ' - ' + word)
