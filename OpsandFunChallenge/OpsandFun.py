@@ -27,8 +27,8 @@ class Loops(unittest.TestCase):
         self.assertIn("Copart USA", self.driver.title)
 
     def test_display_fib(self):
-        seq = 4
-        num = Fib().fibcalc(seq - 1)
+        des_seq = 4
+        num = Fib().fibcalc(des_seq - 1)
         word = N2W(num)
 
         print(str(num) + ' - ' + word)
